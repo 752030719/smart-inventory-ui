@@ -1,0 +1,23 @@
+{
+  "name": "joulechat",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ui5/webcomponents": "^2.15.1",
+    "@ui5/webcomponents-base": "^2.15.1",
+    "@ui5/webcomponents-fiori": "^2.15.1",
+    "@ui5/webcomponents-icons": "^2.15.1",
+    "lit": "^3.3.1",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.7"
+  }
+}

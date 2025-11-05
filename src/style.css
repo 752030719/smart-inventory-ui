@@ -1,0 +1,25 @@
+:root {
+  font-family: "72", "72full", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f5f6f7;
+  color: #2f3c48;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f6f7;
+}
+
+#app {
+  min-height: 100vh;
+  background-color: #f5f6f7;
+}
