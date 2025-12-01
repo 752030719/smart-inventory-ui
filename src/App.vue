@@ -14,170 +14,180 @@ const aiRecommendations = ref([
     priority: 1,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '402G',
-    storageName: '南昌售后库',
+    storageName: 'Nanchang After-sales Warehouse',
     availableQuantity: '20 EA',
     duration: '58 H',
     amount: '720 RMB',
-    reason: '各项最优'
+    reason:
+      'Primary recommendation: after-sales warehouse + stock meets target + lead time 58h (shortest among candidates) + low cost.'
   },
   {
     key: 'row-2',
     priority: 2,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '406K',
-    storageName: '贵阳售后库',
+    storageName: 'Guiyang After-sales Warehouse',
     availableQuantity: '50 EA',
     duration: '76 H',
     amount: '800 RMB',
-    reason: '物料时长比南昌售后库长'
+    reason:
+      'Alternative recommendation: after-sales warehouse + stock meets target + lead time 76h (second shortest among candidates).'
   },
   {
     key: 'row-3',
     priority: 3,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '202B',
-    storageName: '北京仓库',
+    storageName: 'Beijing Warehouse',
     availableQuantity: '2000 EA',
     duration: '34 H',
     amount: '600 RMB',
-    reason: '物料时长比贵阳售后库长'
+    reason:
+      'Secondary alternative: regular warehouse + stock meets target + shortest lead time (across all warehouses) + low cost.'
   },
   {
     key: 'row-4',
     priority: 4,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '201A',
-    storageName: '上海仓库',
+    storageName: 'Shanghai Warehouse',
     availableQuantity: '1000 EA',
     duration: '55 H',
     amount: '780 RMB',
-    reason: '物流时长比北京售后库长'
+    reason:
+      'Secondary alternative: regular warehouse + stock meets target + lead time 55h.'
   },
   {
     key: 'row-5',
     priority: 5,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '204D',
-    storageName: '广州仓库',
+    storageName: 'Guangzhou Warehouse',
     availableQuantity: '1600 EA',
     duration: '58 H',
     amount: '800 RMB',
-    reason: '物流时长比上海售后库长'
+    reason:
+      'Secondary alternative: regular warehouse + stock meets target + lead time 58h.'
   },
   {
     key: 'row-6',
     priority: 6,
     available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '203C',
-    storageName: '深圳仓库',
+    storageName: 'Shenzhen Warehouse',
     availableQuantity: '1800 EA',
     duration: '58 H',
     amount: '850 RMB',
-    reason: '运输时长比广州售后库长'
+    reason:
+      'Secondary alternative: regular warehouse + stock meets target + lead time 58h (same as Shenzhen) + lower cost.'
   },
   {
     key: 'row-7',
-    priority: null,
-    available: false,
+    priority: 7,
+    available: true,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '205E',
-    storageName: '重庆仓库',
+    storageName: 'Chongqing Warehouse',
     availableQuantity: '800 EA',
     duration: '76 H',
     amount: '700 RMB',
-    reason: '不符合整批调拨'
+    reason:
+      'Secondary alternative: regular warehouse + stock meets target + longest lead time (76h).'
   },
   {
     key: 'row-8',
     priority: null,
     available: false,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '401F',
-    storageName: '南京售后库',
+    storageName: 'Nanjing After-sales Warehouse',
     availableQuantity: '10 EA',
     duration: '54 H',
     amount: '750 RMB',
-    reason: '不符合整批调拨'
+    reason:
+      'Not recommended: after-sales warehouse + lead time 54h (second shortest vs 52h) + insufficient stock.'
   },
   {
     key: 'row-9',
     priority: null,
     available: false,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '403H',
-    storageName: '洛阳售后库',
+    storageName: 'Luoyang After-sales Warehouse',
     availableQuantity: '12 EA',
     duration: '52 H',
     amount: '560 RMB',
-    reason: '不符合整批调拨'
+    reason:
+      'Not recommended: after-sales warehouse + lead time 52h (shortest among after-sales warehouses) + low cost but insufficient stock.'
   },
   {
     key: 'row-10',
     priority: null,
     available: false,
     materialCode: '10000293',
-    materialDescription: '离心泵叶轮组件',
+    materialDescription: 'Centrifugal pump impeller assembly',
     companyCode: '1000',
     companyName: 'BestRun CN',
     plantCode: '1010',
     plantName: 'Plant 1010',
     storageCode: '405J',
-    storageName: '合肥售后库',
+    storageName: 'Hefei After-sales Warehouse',
     availableQuantity: '8 EA',
     duration: '52 H',
     amount: '750 RMB',
-    reason: '不符合整批调拨'
+    reason:
+      'Not recommended: after-sales warehouse + lead time 52h (same as Luoyang) + higher cost than Luoyang and insufficient stock.'
   }
 ])
 
@@ -209,14 +219,14 @@ const emailForm = reactive({
 })
 
 const defaultRules = Object.freeze([
-  '不能从目标仓库调拨',
-  '优先从物流时长最短的仓库调拨',
-  '相同时长情况下，优先从运费最少的仓库调拨'
+  'Cannot transfer from the target warehouse.',
+  'Prioritize transfers from warehouses with the shortest transit time.',
+  'If transit time is equal, prioritize the warehouse with the lowest freight cost.'
 ])
 
 const userPreferenceRules = ref([
-  '优先从售后库调拨',
-  '必须整批调拨，不允许从多个仓库分批调拨'
+  'Prefer transfers from after-sales warehouses.',
+  'Transfer must be in a full batch; do not split across multiple warehouses.'
 ])
 
 const isTableLoading = ref(true)
@@ -318,13 +328,13 @@ const closeDialog = (dialogRef) => {
 }
 
 const openAiRuleDialog = () => {
-  return runWithLoading('AI Agent 正在同步规则...', () => {
+  return runWithLoading('AI Agent is syncing rules...', () => {
     openDialog(aiRuleDialogRef)
   }, 850)
 }
 
 const onAiRuleAfterClose = () => {
-  showToast('AI 规则已就绪')
+  showToast('AI rules are ready.')
 }
 
 const buildEmailTemplate = () => {
@@ -333,57 +343,54 @@ const buildEmailTemplate = () => {
   const sourceText =
     confirmForm.sourceWarehouse ||
     [first?.storageCode, first?.storageName].filter(Boolean).join(' ') ||
-    '来源仓库'
-  const rawTarget = confirmForm.targetWarehouse || `${filters.targetWarehouse} 沈阳售后库`
-  const targetText = rawTarget.replace(/目标仓库$/u, '').trim() || '沈阳售后库'
+    'Source warehouse'
+  const rawTarget =
+    confirmForm.targetWarehouse || `${filters.targetWarehouse} Shenyang After-sales Warehouse`
+  const targetText = rawTarget.trim() || 'Shenyang After-sales Warehouse'
   const materialCode = confirmForm.material || first?.materialCode || '10000293'
   const requiredDate = confirmForm.date || '2025-11-18'
 
-  return `尊敬的供应链管理部 / 仓储管理同事：
+  return `Dear Supply Chain / Warehouse colleagues,
 
-您好！
+${targetText} is currently below the safety stock level for the centrifugal pump impeller assembly (material ${materialCode}) and cannot support upcoming after-sales work orders. I would like to request a transfer of ${quantityText} from ${sourceText} to ${targetText}. Please help to complete the goods receipt before ${requiredDate}. The system has already created transfer order ${transferOrderNumber.value}.
 
-鉴于${targetText}当前离心泵叶轮组件（物料编码：${materialCode}）库存已低于安全阈值，无法满足近期售后维修工单需求，现申请从${sourceText}调拨 ${quantityText} 该物料至${targetText}。请协助在 ${requiredDate} 前完成入库，系统已生成调拨单 ${transferOrderNumber.value}。
+If you need additional justification or have any questions about inventory or logistics arrangements, please feel free to contact me.
 
-如需补充需求证明或在库存、物流安排方面有任何疑问，欢迎随时与我联系。
-
-感谢支持，敬请回复确认。
-`
+Thank you for your support. Please confirm this request at your earliest convenience.`
 }
-
 const onTransferClick = () => {
   if (!selectedKeys.value.length) {
-    showToast('请先选择要调拨的行')
+    showToast('Please select at least one row to transfer.')
     return
   }
 
   const first = selectedRows.value[0]
   confirmForm.material = first.materialCode
   confirmForm.plant = `${first.plantCode} ${first.plantName}`
-  confirmForm.targetWarehouse = `${filters.targetWarehouse} 沈阳售后库`
+  confirmForm.targetWarehouse = `${filters.targetWarehouse} Shenyang After-sales Warehouse`
   confirmForm.sourceWarehouse = `${first.storageCode} ${first.storageName}`
   confirmForm.quantity = first.availableQuantity
   confirmForm.date = '2025-11-18'
 
-  return runWithLoading('AI Agent 正在生成调拨方案...', () => {
+  return runWithLoading('AI Agent is generating a transfer proposal...', () => {
     openDialog(confirmDialogRef)
   }, 1000)
 }
 
 const onConfirmDialogApprove = () => {
-  return runWithLoading('AI Agent 正在创建调拨单...', () => {
+  return runWithLoading('AI Agent is creating the transfer order...', () => {
     closeConfirmDialog()
-    emailForm.subject = `调拨单 ${transferOrderNumber.value} 通知：${confirmForm.material}`
+    emailForm.subject = `Transfer order ${transferOrderNumber.value} notification: ${confirmForm.material}`
     emailContent.value = buildEmailTemplate()
-    showToast(`已创建调拨单${transferOrderNumber.value}`)
+    showToast(`Transfer order ${transferOrderNumber.value} has been created.`)
     openDialog(emailDialogRef)
   }, 1000)
 }
 
 const onEmailSend = () => {
-  return runWithLoading('AI Agent 正在发送通知邮件...', () => {
+  return runWithLoading('AI Agent is sending the notification email...', () => {
     closeEmailDialog()
-    showToast('调拨通知已发送，流程完成 ✅')
+    showToast('Transfer notification sent. Process completed ✅')
   }, 1100)
 }
 
@@ -423,7 +430,7 @@ const handleEmailFormInput = (key) => (event) => {
 
 const onEditPreferences = () => {
   closeDialog(aiRuleDialogRef)
-  showToast('请在设置中修改当前用户偏好')
+  showToast('Please update your preferences in Settings.')
 }
 
 const closeAiRuleDialog = () => {
@@ -490,17 +497,17 @@ const closeAiReasonTooltip = () => {
 
 <template>
   <div class="page">
-    <ui5-shellbar primary-title="智能调拨系统" secondary-title="Inventory Transfer Assistant">
+    <ui5-shellbar primary-title="Smart Inventory Transfer System" secondary-title="Inventory Transfer Assistant">
       <img slot="logo" src="/sap-logo.svg" alt="SAP logo" class="sap-logo" />
       <ui5-avatar slot="profile" icon="employee"></ui5-avatar>
     </ui5-shellbar>
 
     <main class="content">
       <section class="filter-card">
-        <div class="card-title">库存调拨推荐</div>
+        <div class="card-title">Inventory Transfer Recommendations</div>
         <div class="filter-grid">
           <div class="field">
-            <ui5-label for="material">物料号</ui5-label>
+            <ui5-label for="material">Material</ui5-label>
             <ui5-input
               id="material"
               :value="filters.material"
@@ -508,11 +515,11 @@ const closeAiReasonTooltip = () => {
             />
           </div>
           <div class="field">
-            <ui5-label for="plant">工厂</ui5-label>
+            <ui5-label for="plant">Plant</ui5-label>
             <ui5-input id="plant" :value="filters.plant" @input="handleFilterInput('plant')" />
           </div>
           <div class="field">
-            <ui5-label for="target-warehouse">目标仓库</ui5-label>
+            <ui5-label for="target-warehouse">Target Warehouse</ui5-label>
             <ui5-input
               id="target-warehouse"
               :value="filters.targetWarehouse"
@@ -520,7 +527,7 @@ const closeAiReasonTooltip = () => {
             />
           </div>
           <div class="field">
-            <ui5-label for="target-quantity">目标数量</ui5-label>
+            <ui5-label for="target-quantity">Target Quantity</ui5-label>
             <ui5-input
               id="target-quantity"
               :value="filters.targetQuantity"
@@ -529,8 +536,8 @@ const closeAiReasonTooltip = () => {
           </div>
         </div>
         <div class="actions">
-          <ui5-button design="Emphasized" icon="create">查询</ui5-button>
-          <ui5-button design="Positive" icon="workflow-tasks" @click="onTransferClick">调拨</ui5-button>
+          <ui5-button design="Emphasized" icon="create">Search</ui5-button>
+          <ui5-button design="Positive" icon="workflow-tasks" @click="onTransferClick">Transfer</ui5-button>
           <ui5-button class="ai-rule-button" design="Transparent" @click="openAiRuleDialog">
             AI Rule
           </ui5-button>
@@ -541,18 +548,18 @@ const closeAiReasonTooltip = () => {
         <div class="table-scroll">
           <div v-if="isTableLoading" class="table-loading">
             <ui5-busy-indicator size="Large" active></ui5-busy-indicator>
-            <p>AI Agent 正在动态计算中...</p>
+            <p>AI Agent is calculating in real time...</p>
           </div>
           <ui5-table v-else class="recommendation-table" mode="None">
             <ui5-table-header-row slot="headerRow">
-              <ui5-table-header-cell width="68px" min-width="64px">选择</ui5-table-header-cell>
-              <ui5-table-header-cell width="88px" min-width="82px">优先级</ui5-table-header-cell>
-              <ui5-table-header-cell width="128px" min-width="112px">物料编码</ui5-table-header-cell>
-              <ui5-table-header-cell width="130px" min-width="70px">物料描述</ui5-table-header-cell>
-            <ui5-table-header-cell width="160px" min-width="140px">公司</ui5-table-header-cell>
-            <ui5-table-header-cell width="130px" min-width="100px">工厂</ui5-table-header-cell>
-            <ui5-table-header-cell width="130px" min-width="100px">仓库</ui5-table-header-cell>
-            <ui5-table-header-cell width="100px" min-width="80px">可用数量</ui5-table-header-cell>
+              <ui5-table-header-cell width="68px" min-width="64px">Select</ui5-table-header-cell>
+              <ui5-table-header-cell width="88px" min-width="82px">Priority</ui5-table-header-cell>
+              <ui5-table-header-cell width="128px" min-width="112px">Material ID</ui5-table-header-cell>
+              <ui5-table-header-cell width="130px" min-width="70px">Material Description</ui5-table-header-cell>
+            <ui5-table-header-cell width="160px" min-width="140px">Company</ui5-table-header-cell>
+            <ui5-table-header-cell width="130px" min-width="100px">Plant</ui5-table-header-cell>
+            <ui5-table-header-cell width="130px" min-width="100px">Warehouse</ui5-table-header-cell>
+            <ui5-table-header-cell width="100px" min-width="80px">Available Quantity</ui5-table-header-cell>
             <ui5-table-header-cell
               class="tooltip-cell"
               width="100px"
@@ -565,7 +572,7 @@ const closeAiReasonTooltip = () => {
                 @mouseleave="closeDurationTooltip"
                 @focusin="openDurationTooltip"
                 @focusout="closeDurationTooltip"
-                >运输时长</span
+                >Transit Time</span
               >
             </ui5-table-header-cell>
             <ui5-table-header-cell
@@ -580,7 +587,7 @@ const closeAiReasonTooltip = () => {
                 @mouseleave="closeAmountTooltip"
                 @focusin="openAmountTooltip"
                 @focusout="closeAmountTooltip"
-                >运输成本</span
+                >Transport Cost</span
               >
             </ui5-table-header-cell>
             <ui5-table-header-cell
@@ -596,8 +603,8 @@ const closeAiReasonTooltip = () => {
                 @focusin="openAiReasonTooltip"
                 @focusout="closeAiReasonTooltip"
               >
-                <ui5-icon name="lightbulb" class="ai-header-icon"></ui5-icon>
-                <span>AI排序结果</span>
+                <img src="/ai.svg?v=blue" alt="AI" class="ai-header-icon" />
+                <span>AI Ranking Result</span>
               </div>
             </ui5-table-header-cell>
           </ui5-table-header-row>
@@ -628,7 +635,11 @@ const closeAiReasonTooltip = () => {
                   <ui5-icon :name="priorityDisplay(row).icon" class="status-icon danger" />
                 </template>
                 <template v-else>
-                  <span class="priority-badge">{{ priorityDisplay(row).label }}</span>
+                  <span
+                    class="priority-badge"
+                    :class="{ warn: row.priority >= 3 && row.priority <= 7 }"
+                    >{{ priorityDisplay(row).label }}</span
+                  >
                 </template>
               </div>
             </ui5-table-cell>
@@ -677,36 +688,36 @@ const closeAiReasonTooltip = () => {
     <ui5-dialog
       ref="aiRuleDialogRef"
       class="dialog"
-      header-text="AI 调拨规则"
+      header-text="AI Transfer Rules"
       @after-close="onAiRuleAfterClose"
     >
       <div class="dialog-content ai-rules">
         <section class="rule-section default-section">
-          <div class="rule-header">默认规则</div>
-          <p class="rule-caption">依据集团策略统一配置，暂不支持修改</p>
+          <div class="rule-header">Default rules</div>
+          <p class="rule-caption">Configured based on corporate policy; editing is currently not supported.</p>
           <ul class="rule-list">
             <li v-for="rule in defaultRules" :key="rule">{{ rule }}</li>
           </ul>
         </section>
         <section class="rule-section editable-section">
-          <div class="rule-header">用户偏好</div>
-          <p class="rule-caption">当前偏好会叠加到默认规则上，可按需微调</p>
+          <div class="rule-header">User preferences</div>
+          <p class="rule-caption">Your preferences are applied on top of the default rules and can be fine-tuned as needed.</p>
           <ul class="rule-list">
             <li v-for="rule in userPreferenceRules" :key="rule">{{ rule }}</li>
           </ul>
-          <ui5-button class="rule-edit-button" design="Transparent" @click="onEditPreferences">编辑偏好</ui5-button>
-          <p class="rule-hint">点击编辑可调整个人偏好</p>
+          <ui5-button class="rule-edit-button" design="Transparent" @click="onEditPreferences">Edit preferences</ui5-button>
+          <p class="rule-hint">Click Edit to adjust your personal preferences.</p>
         </section>
       </div>
       <div slot="footer" class="dialog-footer">
-        <ui5-button design="Emphasized" @click="closeAiRuleDialog">完成</ui5-button>
+        <ui5-button design="Emphasized" @click="closeAiRuleDialog">Done</ui5-button>
       </div>
     </ui5-dialog>
 
-    <ui5-dialog ref="confirmDialogRef" class="dialog" header-text="调拨确认">
+    <ui5-dialog ref="confirmDialogRef" class="dialog" header-text="Transfer Confirmation">
       <div class="dialog-content form-grid">
         <div class="field">
-          <ui5-label for="confirm-material">物料</ui5-label>
+          <ui5-label for="confirm-material">Material</ui5-label>
           <ui5-input
             id="confirm-material"
             :value="confirmForm.material"
@@ -714,7 +725,7 @@ const closeAiReasonTooltip = () => {
           />
         </div>
         <div class="field">
-          <ui5-label for="confirm-plant">工厂</ui5-label>
+          <ui5-label for="confirm-plant">Plant</ui5-label>
           <ui5-input
             id="confirm-plant"
             :value="confirmForm.plant"
@@ -722,7 +733,7 @@ const closeAiReasonTooltip = () => {
           />
         </div>
         <div class="field">
-          <ui5-label for="confirm-target">目标仓库</ui5-label>
+          <ui5-label for="confirm-target">Target Warehouse</ui5-label>
           <ui5-input
             id="confirm-target"
             :value="confirmForm.targetWarehouse"
@@ -730,7 +741,7 @@ const closeAiReasonTooltip = () => {
           />
         </div>
         <div class="field">
-          <ui5-label for="confirm-source">发出仓库</ui5-label>
+          <ui5-label for="confirm-source">Source Warehouse</ui5-label>
           <ui5-input
             id="confirm-source"
             :value="confirmForm.sourceWarehouse"
@@ -738,7 +749,7 @@ const closeAiReasonTooltip = () => {
           />
         </div>
         <div class="field">
-          <ui5-label for="confirm-qty">数量</ui5-label>
+          <ui5-label for="confirm-qty">Quantity</ui5-label>
           <ui5-input
             id="confirm-qty"
             :value="confirmForm.quantity"
@@ -746,7 +757,7 @@ const closeAiReasonTooltip = () => {
           />
         </div>
         <div class="field">
-          <ui5-label for="confirm-date">日期</ui5-label>
+          <ui5-label for="confirm-date">Date</ui5-label>
           <ui5-date-picker
             id="confirm-date"
             :value="confirmForm.date"
@@ -755,17 +766,17 @@ const closeAiReasonTooltip = () => {
         </div>
       </div>
       <div slot="footer" class="dialog-footer">
-        <ui5-button design="Transparent" @click="closeConfirmDialog">取消</ui5-button>
-        <ui5-button design="Emphasized" @click="onConfirmDialogApprove">确认</ui5-button>
+        <ui5-button design="Transparent" @click="closeConfirmDialog">Cancel</ui5-button>
+        <ui5-button design="Emphasized" @click="onConfirmDialogApprove">Confirm</ui5-button>
       </div>
     </ui5-dialog>
 
-    <ui5-dialog ref="emailDialogRef" class="dialog" header-text="发送 Email 通知">
+    <ui5-dialog ref="emailDialogRef" class="dialog" header-text="Send Email Notification">
       <div class="dialog-content">
-        <div class="email-info">已创建调拨单 {{ transferOrderNumber }}</div>
+        <div class="email-info">Transfer order {{ transferOrderNumber }} has been created.</div>
         <div class="email-meta">
           <div class="field">
-            <ui5-label for="email-sender">发件人</ui5-label>
+            <ui5-label for="email-sender">Sender</ui5-label>
             <ui5-input
               id="email-sender"
               :value="emailForm.sender"
@@ -773,7 +784,7 @@ const closeAiReasonTooltip = () => {
             />
           </div>
           <div class="field">
-            <ui5-label for="email-to">收件人</ui5-label>
+            <ui5-label for="email-to">To</ui5-label>
             <ui5-input
               id="email-to"
               :value="emailForm.to"
@@ -781,7 +792,7 @@ const closeAiReasonTooltip = () => {
             />
           </div>
           <div class="field">
-            <ui5-label for="email-cc">抄送</ui5-label>
+            <ui5-label for="email-cc">Cc</ui5-label>
             <ui5-input
               id="email-cc"
               :value="emailForm.cc"
@@ -789,7 +800,7 @@ const closeAiReasonTooltip = () => {
             />
           </div>
           <div class="field">
-            <ui5-label for="email-subject">主题</ui5-label>
+            <ui5-label for="email-subject">Subject</ui5-label>
             <ui5-input
               id="email-subject"
               :value="emailForm.subject"
@@ -806,28 +817,28 @@ const closeAiReasonTooltip = () => {
         />
       </div>
       <div slot="footer" class="dialog-footer">
-        <ui5-button design="Transparent" @click="onEmailCancel">否</ui5-button>
-        <ui5-button design="Positive" @click="onEmailSend">是</ui5-button>
+        <ui5-button design="Transparent" @click="onEmailCancel">Cancel</ui5-button>
+        <ui5-button design="Positive" @click="onEmailSend">Send</ui5-button>
       </div>
     </ui5-dialog>
 
     <ui5-toast ref="toastRef" placement="BottomCenter">{{ toastMessage }}</ui5-toast>
     <ui5-popover ref="durationTooltipRef" hide-arrow placement-type="Top" class="tooltip-popover">
       <div class="tooltip-content">
-        物流时长<br />
-        将发出仓库、目标仓库的物料地点，与物料重量结合，通过调用外部物流网站API，得到运输时长和运输费用。<br />
+        Transit time<br />
+        Combines the material locations of the source and target warehouses with material weight and calls an external logistics website API to calculate transit time and freight cost.<br />
       </div>
     </ui5-popover>
     <ui5-popover ref="amountTooltipRef" hide-arrow placement-type="Top" class="tooltip-popover">
       <div class="tooltip-content">
-        调拨成本<br />
-        将发出仓库、目标仓库的物料地点，与物料重量结合，通过调用外部物流网站API，得到运输时长和运输费用。<br />
+        Transfer cost<br />
+        Uses the same logistics data and external API to estimate transfer cost (freight).<br />
       </div>
     </ui5-popover>
     <ui5-popover ref="aiReasonTooltipRef" hide-arrow placement-type="Top" class="tooltip-popover">
       <div class="tooltip-content">
-        AI 推荐结果<br />
-        智能调拨 Agent 结合 S/4 实时库存、物流时长、调拨成本、用户偏好等多维数据，通过加权评分模型对可调拨仓库进行综合评估与排序，为决策者提供更优的调拨建议。
+        AI recommendation result<br />
+        The Smart Transfer Agent combines S/4 real-time inventory, transit time, transfer cost, user preferences, and other dimensions, and uses a weighted scoring model to evaluate and rank candidate warehouses, providing better transfer recommendations for decision makers.
       </div>
     </ui5-popover>
 
@@ -938,13 +949,16 @@ const closeAiReasonTooltip = () => {
 }
 
 .ai-reason-cell {
-  min-width: 500px;
+  min-width: 300px;
 }
 
 .ai-text {
+  display: block;
   white-space: normal;
   line-height: 1.5;
   word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
 
 .ai-header {
@@ -1053,6 +1067,9 @@ const closeAiReasonTooltip = () => {
 .ai-header-icon {
   color: #0a6ed1;
   font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
 }
 
 :deep(.row-checkbox) {
@@ -1140,6 +1157,11 @@ const closeAiReasonTooltip = () => {
   font-size: 0.95rem;
 }
 
+.priority-badge.warn {
+  background-color: #fff6d1; /* light yellow */
+  color: #8a6d00; /* dark yellow text for contrast */
+}
+
 .status-icon {
   font-size: 1.1rem;
   color: inherit;
@@ -1204,7 +1226,12 @@ const closeAiReasonTooltip = () => {
 :deep(.ai-rule-button::part(button)) {
   border: 1px solid #c7d3e3;
   border-radius: 0.5rem;
-  padding: 0 1.2rem;
+  padding: 0 1.2rem; /* keep right padding */
+  padding-left: 2rem; /* space for the icon */
+  background-image: url('/ai.svg');
+  background-repeat: no-repeat;
+  background-position: 0.6rem center;
+  background-size: 1rem 1rem;
 }
 
 :deep(.ai-rule-button::part(button):hover) {
